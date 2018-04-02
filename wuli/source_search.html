@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>矿宝宝官网</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/jackson.css" />
+	<link rel="stylesheet" href="../css/gm.css" />
+	<script src="../js/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="../js/echarts.min.js"></script>
+	<script src="../js/jquery.fly.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!--头部个人-->
+	<div class="mall_header">
+		<div class="con_mall">
+			<div class="left_hot">
+				<span>欢迎来到矿宝宝官网</span>
+				<a href="../html/sign_in.html">请登录</a>
+				<a href="../html/register.html">免费注册</a>
+			</div>
+			<div class="left_right">
+				<a class="huiyuan_zhoangixn" href="../html/personal_enter.html">会员中心<img src="../img/shouye/hui_yuan.png" alt="" /></a>|
+				<div class="sjpi_koa">
+				</div>
+				<a href="">消息中心</a>|
+				<a href="">帮助中心</a>|
+				<a href="../html/about_us.html">关于我们</a>|
+				<a href="">在线客服</a>
+			</div>
+		</div>
+	</div>
+	<!--nav-->
+	<div class="big_main sc_danhang">
+		<!--loge-->
+		<div class="logo_head">
+			<div class="zuo_logo">
+				<a href="../index.html"></a>
+			</div>
+			<div class="nav_top">
+				<div class="nav_right">
+					<ul>
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="../shangcheng/spot_mall.html">现货商城</a></li>
+						<li><a style="color:#0058a9;" href="../wuli/source_search.html">货源搜索</a></li>
+						<li><a href="../wuli/logistics.html">矿宝宝物流</a></li>
+						<li><a href="../wuli/supply_chain_finance.html">供应链金融</a></li>
+						<li><a href="../wuli/news_information.html">行业资讯</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="g_nav_right pull-right">
+				<img src="../img/load/kf-dl.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- 货源搜索  发布求购-->
+	<div class="g_goods_buy">
+		<div class="g_goods_buy_inner">
+			<div class="clear">
+				<div class="g_goods_buy_l pull-left">
+					<div class="swiper-container g_goods_banner">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="../img/wuliu/banner-hy.png" alt="">
+							</div>
+							<div class="swiper-slide"><img src="../img/wuliu/banner-hy.png" alt=""></div>
+						</div>
+						<div class="swiper-pagination data-swiper-parallax"></div>
+					</div>
+				</div>
+				<div class="g_goods_buy_r pull-right">
+					<button id="g_goods_btn" type="button">立即发布</button>
+				</div>
+			</div>
+			<div class="g_goods_buy_c">
+				<form action="">
+					<div class="g_ipt_option clear">
+						<label for="">品名
+							<input type="text" placeholder="请输入品名">
+						</label>
+						<label for="">产地
+							<input type="text" placeholder="请输入产地">
+						</label>
+						<label for="">起购吨数
+							<input type="text" placeholder="请输入吨数">
+						</label>
+						<label for="">可供吨数
+							<input type="text" placeholder="请输入吨数">
+						</label>
+						<label for="">报价
+							<input type="text" placeholder="请输入价格">
+						</label>
+					</div>
+					<div class="clear">
+						<label class="pull-left" for="">指标
+							<input class="g_ipt_index" type="text" placeholder="请输入指标">
+						</label>
+						<button class="pull-right" type="submit">搜索</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 货源列表 -->
+	<div class="g_spot_list g_goods_list" id="g_goods_list">
+		<ul>
+			<li class="g_spot_list_title">
+				<table>
+					<td>品名</td>
+					<td>产地</td>
+					<td class="g_list_three">指标</td>
+					<td>起购吨数</td>
+					<td>可供吨数</td>
+					<td>报价</td>
+					<td>发布时间</td>
+					<td>货源类型</td>
+					<td>操作</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td><span class="g_red">￥940</span>/吨</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td>出厂价</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td><span class="g_red">￥940</span>/吨</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td>出厂价</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td><span class="g_red">￥940</span>/吨</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td>出厂价</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td><span class="g_red">￥940</span>/吨</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td>出厂价</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td><span class="g_red">￥940</span>/吨</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td>出厂价</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td><span class="g_red">￥940</span>/吨</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+			<li>
+				<table>
+					<td>钢材钢材钢</td>
+					<td>嘉峪关峪关</td>
+					<td class="g_spot_three">TFe：=61% S：≤0.03% P：≤0.07 抗压强度（N/个球）：≥1600 粒度：Ld</td>
+					<td>1000吨</td>
+					<td>50000吨</td>
+					<td>出厂价</td>
+					<td>2018-03-07</td>
+					<td class="g_channel"></td>
+					<td>
+						<button class="start" type="button">选货</button>
+					</td>
+				</table>
+			</li>
+		</ul>
+		<!--分页-->
+		<div class="fen_page">
+			<div class="ep-pages tade_heigh">
+				<a href="">首页</a>
+				<a class="ep-pages-ctrl ep-pages-ffs">上一页</a>
+				<a href="" target="_self" class="current">1</a>
+				<a href="" target="_self">2</a>
+				<a href="" target="_self">3</a>
+				<a href="" target="_self">4</a>
+				<span>...</span>
+				<a href="" target="_self">10</a>
+				<a href="" target="_self">下一页</a>
+				<a href="">尾页</a>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="g_foot">
+		<div class="g_foot_top">
+			<ul class="clear">
+				<li><img src="../img/shouye/ys-1.png" alt=""><span>免费找货找车</span></li>
+				<li><img src="../img/shouye/ys-2.png" alt=""><span>矿厂直供资源</span></li>
+				<li><img src="../img/shouye/ys-3.png" alt=""><span>矿种丰富全面</span></li>
+				<li><img src="../img/shouye/ys-4.png" alt=""><span>服务安全可靠</span></li>
+				<li><img src="../img/shouye/ys-5.png" alt=""><span>缺钱可打白条</span></li>
+			</ul>
+		</div>
+		<div class="g_foot_ft">
+			<dl class="clear">
+				<dt><img src="../img/shouye/logo-di.png" alt=""></dt>
+				<dd>
+					<ul class="clear">
+						<li><a href="#">关于我们</a>&nbsp;/&nbsp;</li>
+						<li><a href="#">法律声明</a>&nbsp;/&nbsp;</li>
+						<li><a href="#">投资洽谈</a>&nbsp;/&nbsp;</li>
+						<li><a href="#">加入我们</a>&nbsp;/&nbsp;</li>
+						<li><a href="#">联系我们</a>&nbsp;/&nbsp;</li>
+						<li><a href="#">常见问题</a></li>
+					</ul>
+					<p>Copyright © 2005-2017 北京矿宝宝网络科技有限公司&nbsp;版权所有</p>
+					<p>服务热线：400-667-1052（9:00-18:00）</p>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- 免费发布求购 -->
+	<div class="g_log_bomb_box g_free_purchase" id='g_free_purchase'>
+		<div class="g_bomb_hd clear">
+			<h1 class="pull-left">免费发布求购</h1>
+			<a class="pull-right g_close" href="javascript:;"></a>
+		</div>
+		<div class="g_bomb_ct">
+			<form action="">
+				<ul class="clear">
+					<li>
+						<label class="pull-left" for="g_mineral">矿种</label>
+						<input class="pull-left" type="text" id="g_mineral" placeholder="输入矿种">
+					</li>
+					<li>
+						<label class='pull-left' for="g_region">区域</label>
+						<input class='pull-left' type="text" id="g_region" placeholder="输入区域">
+					</li>
+					<li>
+						<label class='pull-left' for="g_tonnage">吨数</label>
+						<input class='pull-left' type="text" id="g_tonnage" placeholder="输入吨数">
+					</li>
+					<li>
+						<label class="pull-left">备注</label>
+						<textarea class="pull-left" placeholder="输入其他说明..." name="" id="" cols="30" rows="10"></textarea>
+					</li>
+				</ul>
+				<div class="g_log_submit">
+					<button class="active" type="submit">提交</button>
+					<button class="g_close" type="button">关闭</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 弹幕 -->
+	<div class="g_barrage" id="g_barrage"></div>
+	<div class="g_search_barrage" id="g_search_barrage">
+		<div class="g_barrage_inner clear">
+			<div class="g_barrage_l pull-left">
+				<img src="../img/wuliu/zh-bt.png" alt="">
+			</div>
+			<div class="g_barrage_r pull-right">
+				<div><a href="javascript:;" id="g_close" class="fr-ass-close" title="关闭"></a></div>
+				<form action=" ">
+					<label for="">矿种
+						<input type="text" placeholder="请输入矿种">
+					</label>
+					<label for="">区域
+						<input type="text" placeholder="请输入区域">
+					</label>
+					<label for="">吨数
+						<input type="text" placeholder="请输入吨数">
+					</label>
+					<label for="">备注
+						<input type="text" placeholder="请输入其他说明...">
+					</label>
+					<button type="submit">立即发布</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 选货弹框 -->
+	<div class="g_lock_goods g_selected_goods" id="g_selected_goods">
+		<div class="g_iconClose clear">
+			<a class="g_close pull-right" href="javascript:;"></a>
+		</div>
+		<div class="g_success_alert">
+			<i class="g_lock_icon"></i>
+			<h3>选货成功</h3>
+			<p>稍后会有矿宝宝客服为您致电服务</p>
+			<button class="active">继续选购</button>
+			<a href="../html/my_order.html"><button>查看订单</button></a>
+		</div>
+	</div>
+	<div class="g_bomb_mask"></div>
+</body>
+<script src="../js/kbb.js" type="text/javascript"></script>
+<script src="../js/gm.js" type="text/javascript"></script>
+
+</html>
